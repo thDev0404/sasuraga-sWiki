@@ -1,0 +1,43 @@
+html {
+  background-color: #e8f8ff;
+}
+h1 {
+  background-color: #cbf3ff;
+}
+p {
+  padding: 0px 0px 0px 20px;
+  margin: 0 0 0 0;
+}
+main{
+  background-color: #ffffff;
+  padding: 20px 0px 0px 20px;
+  border: 5px solid black;
+}
+footer{
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  height: 50px;
+}
+p.name{
+  text-align: right;
+}
+
+div.references{
+  background-color: #bab5ff;
+  color: #ffffff;
+}
+
+h3{
+  color: #ff0000;
+  font-size: 25px;
+}
+h4{
+  color: #9b0000;
+}
+img {
+  display: block;
+  max-width: 400px; /* 最大幅 */
+  max-height: 400px; /* 最小幅 */
+  margin-right: auto;
+}
