@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <style type="text/css">
+        @font-face {
+            font-family: 'hm_tb';   /* フォント名 */
+            src:url('font/Nちはやフォント.ttf') format('truetype');   /* フォントファイル */
+        }
+    </style>
+    <title>webフォントテスト</title>
+</head>
+
+<body>
+  <span style="
+      font-family: 'hm_tb';
+  "></span><br>
+  <canvas id="board" width="1440" height="810"></canvas>
+</body>
+
+<script>
+  const chara= new Array(1,2,3,4);//顔アイコン
+  const text1="エレインよ";//短評1行目
+  const text2="まさかアタシがこんなのを書かされるとわね";//短評2行目
+  const text3="全く面倒だわ";//短評3行目
+  const text4="これで文句ないでしょう？";//短評4行目
+  const maker=1;//ここに作成者の名前
+  const name="骨のハチミツかけ"; //ここに料理の名前
+  const material="・骨";//ここに素材
+  const No="1";//ここに番号
+  const data="4/23";//ここに日付
+  const scenario="プロローグ";//ここにシナリオ名前
+  const eat=new Array(0,1,0,1,1,1);//食べた人
+
+  window.onload = () => {
+    // canvas準備
+    const board = document.querySelector("#board");  //getElementById()等でも可。オブジェクトが取れれば良い。
+    const ctx = board.getContext("2d");
+    ctx.font = "30px hm_tb";
+    // 画像読み込み
+    const background = new Image();
+    const c1 = new Image();
+    const c2 = new Image();
+    const c3 = new Image();
+    const c4 = new Image();
+    const c5 = new Image();
+    const c6 = new Image();
+    c1.src = "img/1.png";
+    c2.src = "img/2.png";
+    c3.src = "img/3.png";
+    c4.src = "img/4.png";
+    c5.src = "img/5.png";
+    c6.src = "img/6.png";
+    background.src = "img/background.jpg";
+      // 画像のURLを指定
+    background.onload = () => {
+      ctx.font = "30px hm_tb";
+      ctx.drawImage(background, 0, 0);
+      ctx.fillText(text1, 880, 510);
+      ctx.fillText(text2, 880, 570);
+      ctx.fillText(text3, 880, 630);
+      ctx.fillText(text4, 880, 690);
+      ctx.fillText(material, 830, 200);
+      ctx.fillText(data, 870, 45);
+      ctx.fillText(scenario, 940, 83);
+
+      ctx.font = "35px hm_tb";
+      ctx.fillText(name, 110, 265);
+      ctx.fillText(No, 520, 155);
+      for(let i=0;i<4;i++){
+        if(chara[i]===1){
+          ctx.drawImage(c1, 790, 465+i*60);
+        }else if(chara[i]===2){
+          ctx.drawImage(c2, 790, 465+i*60);
+        }else if(chara[i]===3){
+          ctx.drawImage(c3, 790, 465+i*60);
+        }else if(chara[i]===4){
+          ctx.drawImage(c4, 790, 465+i*60);
+        }else if(chara[i]===5){
+          ctx.drawImage(c5, 790, 465+i*60);
+        }else if(chara[i]===6){
+          ctx.drawImage(c6, 790, 465+i*60);
+        }
+      }
+      if(eat[0]===1){
+        ctx.drawImage(c1, 1180, 160);
+      }
+      if(eat[1]===1){
+        ctx.drawImage(c2, 1180, 222);
+      }
+      if(eat[2]===1){
+        ctx.drawImage(c3, 1180, 284);
+      }
+      if(eat[3]===1){
+        ctx.drawImage(c4, 1260, 160);
+      }
+      if(eat[4]===1){
+        ctx.drawImage(c5, 1260, 222);
+      }
+      if(eat[5]===1){
+        ctx.drawImage(c6, 1260, 284);
+      }
+      if(maker===1){
+        ctx.drawImage(c1, 560, 660);
+      }else if(maker===2){
+        ctx.drawImage(c2, 560, 660);
+      }else if(maker===3){
+        ctx.drawImage(c3, 560, 660);
+      }else if(maker===4){
+        ctx.drawImage(c4, 560, 660);
+      }else if(maker===5){
+        ctx.drawImage(c5, 560, 660);
+      }else if(maker===6){
+        ctx.drawImage(c6, 560, 660);
+      }
+    };
+  };
+</script>
+
+</html>

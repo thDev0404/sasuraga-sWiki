@@ -1,6 +1,9 @@
 html {
   background-color: #e8f8ff;
 }
+canvas{
+  font-family:  'tihaya' ;
+}
 h1 {
   background-color: #cbf3ff;
 }
@@ -44,4 +47,8 @@ img {
 
 .imgs {
   display:flex;
+}
+@font-face {
+  font-family: 'tihaya';
+  src: url('../font/Nちはやフォント.ttf') format('truetype');
 }
