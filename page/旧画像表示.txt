@@ -1,0 +1,96 @@
+    /*
+    const background = new Image();
+    const cook = new Image();
+    const c1 = new Image();
+    const c2 = new Image();
+    const c3 = new Image();
+    const c4 = new Image();
+    const c5 = new Image();
+    const c6 = new Image();
+    cook.src = "img/" + cookImg;
+    c1.src = "img/1.png";
+    c2.src = "img/2.png";
+    c3.src = "img/3.png";
+    c4.src = "img/4.png";
+    c5.src = "img/5.png";
+    c6.src = "img/6.png";
+    background.src = "img/background.jpg";
+    // 画像のURLを指定
+    background.onload = () => {
+      ctx.font = "30px hm_tb";
+      ctx.drawImage(background, 0, 0);
+      for (var lines = text.split("\n"), i = 0, l = lines.length; l > i; i++) {
+        ctx.fillText(lines[i], 880, 510 + i * 60);
+      }
+      ctx.fillText(data, 870, 45);
+      ctx.fillText(scenario, 940, 83);
+      for (var lines = material.split("\n"), i = 0, l = lines.length; l > i; i++) {
+        ctx.fillText(lines[i], 830, 200 + i * 40);
+      }
+      ctx.font = "35px hm_tb";
+      ctx.fillText(name, 110, 265);
+      ctx.fillText(No, 520, 155);
+
+      for (let i = 0; i < 4; i++) {
+        if (chara[i] === 1) {
+          ctx.drawImage(c1, 790, 465 + i * 60);
+        } else if (chara[i] === 2) {
+          ctx.drawImage(c2, 790, 465 + i * 60);
+        } else if (chara[i] === 3) {
+          ctx.drawImage(c3, 790, 465 + i * 60);
+        } else if (chara[i] === 4) {
+          ctx.drawImage(c4, 790, 465 + i * 60);
+        } else if (chara[i] === 5) {
+          ctx.drawImage(c5, 790, 465 + i * 60);
+        } else if (chara[i] === 6) {
+          ctx.drawImage(c6, 790, 465 + i * 60);
+        }
+      }
+      if (eat[0] === 1) {
+        ctx.drawImage(c1, 1180, 160);
+      }
+      if (eat[1] === 1) {
+        ctx.drawImage(c2, 1180, 222);
+      }
+      if (eat[2] === 1) {
+        ctx.drawImage(c3, 1180, 284);
+      }
+      if (eat[3] === 1) {
+        ctx.drawImage(c4, 1260, 160);
+      }
+      if (eat[4] === 1) {
+        ctx.drawImage(c5, 1260, 222);
+      }
+      if (eat[5] === 1) {
+        ctx.drawImage(c6, 1260, 284);
+      }
+      if (maker === 1) {
+        ctx.drawImage(c1, 560, 660);
+      } else if (maker === 2) {
+        ctx.drawImage(c2, 560, 660);
+      } else if (maker === 3) {
+        ctx.drawImage(c3, 560, 660);
+      } else if (maker === 4) {
+        ctx.drawImage(c4, 560, 660);
+      } else if (maker === 5) {
+        ctx.drawImage(c5, 560, 660);
+      } else if (maker === 6) {
+        ctx.drawImage(c6, 560, 660);
+      }
+      var cookWidth = cook.width;
+      var cookHeight = cook.height;
+      var widthRate = cookWidth / 500;
+      var heightRate = cookHeight / 350;
+      var imgWidth;
+      var imgHeight;
+      var I = 500 * 350;
+      if (widthRate > heightRate) {
+        imgWidth = cookWidth / widthRate;
+        imgHeight = cookHeight / widthRate;
+      } else {
+        imgWidth = cookWidth / heightRate;
+        imgHeight = cookHeight / heightRate;
+      }
+      ctx.drawImage(cook, 360 - imgWidth / 2, 430 - imgHeight / 2, imgWidth, imgWidth);
+    };
+    */
