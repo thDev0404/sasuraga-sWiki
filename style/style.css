@@ -38,7 +38,7 @@ h3{
 h4{
   color: #9b0000;
 }
-img {
+img.index {
   display: block;
   max-width: 400px; /* 最大幅 */
   max-height: 400px; /* 最小幅 */
@@ -47,6 +47,9 @@ img {
 
 .imgs {
   display:flex;
+}
+.chara{
+  color: #000000;
 }
 @font-face {
   font-family: 'tihaya';
