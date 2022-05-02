@@ -1,9 +1,6 @@
 html {
   background-color: #e8f8ff;
 }
-canvas{
-  font-family:  'tihaya' ;
-}
 h1 {
   background-color: #cbf3ff;
 }
@@ -39,10 +36,8 @@ h4{
   color: #9b0000;
 }
 img.index {
-  display: block;
   max-width: 400px; /* 最大幅 */
   max-height: 400px; /* 最小幅 */
-  margin-right: 10px;
 }
 
 .imgs {
