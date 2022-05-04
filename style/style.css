@@ -53,7 +53,3 @@ img.imger {
 .imgs {
   display:flex;
 }
-@font-face {
-  font-family: 'tihaya';
-  src: url('../font/Nちはやフォント.ttf') format('truetype');
-}
